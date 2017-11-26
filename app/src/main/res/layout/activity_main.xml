@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/number"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="45dp"
             android:textSize="80sp"
             android:textAlignment="center"/>
 
@@ -47,7 +47,8 @@
             android:background="@android:color/holo_orange_light"
             android:text="@string/two_points"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:onClick="twoPointsA"/>
 
         <Button
             android:id="@+id/three_points"
@@ -56,13 +57,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            />
+            android:onClick="threePointsA"/>
         <Button
             android:id="@+id/free_throw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/free_throw"
-            android:background="@android:color/holo_orange_light"/>
+            android:background="@android:color/holo_orange_light"
+            android:onClick="freeThrowA"/>
 
 
     </LinearLayout>
@@ -90,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/number"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="45dp"
             android:textSize="80sp"
             android:textAlignment="center"
             />
@@ -102,7 +104,8 @@
             android:text="@string/two_points"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_orange_light"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:onClick="twoPointsB"/>
 
         <Button
             android:id="@+id/three_points2"
@@ -110,24 +113,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@android:color/holo_orange_light"/>
+            android:background="@android:color/holo_orange_light"
+            android:onClick="threePointsB"/>
         <Button
             android:id="@+id/free_throw2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/free_throw"
-            android:background="@android:color/holo_orange_light"/>
+            android:background="@android:color/holo_orange_light"
+            android:onClick="freeThrowB"/>
 
 
     </LinearLayout>
 
     <Button
+        android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resetButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        android:background="@android:color/holo_orange_light"/>
+        android:background="@android:color/holo_orange_light"
+        android:onClick="reset"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="kirimBang"/>
 
 </RelativeLayout>

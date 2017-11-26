@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidKejar3</string>
+    <string name="home">Home</string>
+    <string name="number">0</string>
+    <string name="two_points">+2 Points</string>
+    <string name="three_points">+3 Points</string>
+    <string name="free_throw">Free Throw</string>
+    <string name="visitor">Visitor</string>
+    <string name="resetButton">reset</string>
+</resources>
